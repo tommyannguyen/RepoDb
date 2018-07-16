@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A31A38C8-603E-4499-A5C1-4A6366864EA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RepoDb</RootNamespace>
+    <AssemblyName>RepoDb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\RepoDb.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ForeignAttribute.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="DataEntityChildItemData.cs" />
+    <Compile Include="Enumerations\ConnectionPersistency.cs" />
+    <Compile Include="Exceptions\NoMatchedFieldsException.cs" />
+    <Compile Include="Exceptions\InvalidQueryExpressionException.cs" />
+    <Compile Include="IsPrimaryIdentityCache.cs" />
+    <Compile Include="DataEntityListDataReader.cs" />
+    <Compile Include="DataEntityMapItem.cs" />
+    <Compile Include="Exceptions\DuplicateDataEntityMapException.cs" />
+    <Compile Include="Exceptions\EntityNotBigCountableException.cs" />
+    <Compile Include="Exceptions\EntityNotCountableException.cs" />
+    <Compile Include="Exceptions\EntityNotBatchQueryableException.cs" />
+    <Compile Include="Exceptions\DataEntityMapException.cs" />
+    <Compile Include="Exceptions\EntityNotInlineInsertableException.cs" />
+    <Compile Include="Exceptions\EntityNotInlineMergeableException.cs" />
+    <Compile Include="Exceptions\EntityNotInlineUpdateableException.cs" />
+    <Compile Include="Extensions\MemberInfoExtension.cs" />
+    <Compile Include="Extensions\TypeExtension.cs" />
+    <Compile Include="DataEntityMapper.cs" />
+    <Compile Include="DataEntityChildListData.cs" />
+    <Compile Include="SqlDbHelper.cs" />
+    <Compile Include="StringConstant.cs" />
+    <Compile Include="CacheItem.cs" />
+    <Compile Include="Exceptions\PrimaryFieldNotFoundException.cs" />
+    <Compile Include="Extensions\ArrayExtension.cs" />
+    <Compile Include="Extensions\OrderFieldExtension.cs" />
+    <Compile Include="Extensions\FieldExtension.cs" />
+    <Compile Include="Interfaces\IStatementBuilder.cs" />
+    <Compile Include="MemoryCache.cs" />
+    <Compile Include="Exceptions\CancelledExecutionException.cs" />
+    <Compile Include="Interfaces\ICache.cs" />
+    <Compile Include="Interfaces\ITrace.cs" />
+    <Compile Include="Attributes\IgnoreAttribute.cs" />
+    <Compile Include="Attributes\MapAttribute.cs" />
+    <Compile Include="Attributes\PrimaryAttribute.cs" />
+    <Compile Include="Attributes\TextAttribute.cs" />
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="DataEntity.cs" />
+    <Compile Include="DbRepository.cs" />
+    <Compile Include="Enumerations\Conjunction.cs" />
+    <Compile Include="Enumerations\Order.cs" />
+    <Compile Include="Enumerations\Command.cs" />
+    <Compile Include="Enumerations\Operation.cs" />
+    <Compile Include="Exceptions\DuplicateTypeMapException.cs" />
+    <Compile Include="Exceptions\EntityNotBulkInsertableException.cs" />
+    <Compile Include="Exceptions\EntityNotInsertableException.cs" />
+    <Compile Include="Exceptions\EntityNotMergeableException.cs" />
+    <Compile Include="Exceptions\EntityNotUpdateableException.cs" />
+    <Compile Include="Exceptions\EntityNotDeletableException.cs" />
+    <Compile Include="Exceptions\EntityNotQueryableException.cs" />
+    <Compile Include="Extensions\DataEntityExtension.cs" />
+    <Compile Include="Extensions\DataReaderExtension.cs" />
+    <Compile Include="Extensions\DbCommandExtension.cs" />
+    <Compile Include="Extensions\DbConnectionExtension.cs" />
+    <Compile Include="Extensions\ObjectExtension.cs" />
+    <Compile Include="Extensions\PropertyInfoExtension.cs" />
+    <Compile Include="Extensions\QueryFieldExtension.cs" />
+    <Compile Include="Extensions\QueryGroupExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="OrderField.cs" />
+    <Compile Include="Field.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryBuilder.cs" />
+    <Compile Include="QueryGroup.cs" />
+    <Compile Include="QueryField.cs" />
+    <Compile Include="CancellableTraceLog.cs" />
+    <Compile Include="ObjectConverter.cs" />
+    <Compile Include="Reflection\DataReaderConverter.cs" />
+    <Compile Include="Reflection\DelegateFactory.cs" />
+    <Compile Include="Reflection\Delegates.cs" />
+    <Compile Include="SqlDbStatementBuilder.cs" />
+    <Compile Include="StatementBuilderMap.cs" />
+    <Compile Include="StatementBuilderMapper.cs" />
+    <Compile Include="TraceLog.cs" />
+    <Compile Include="DataEntityMap.cs" />
+    <Compile Include="TypeMap.cs" />
+    <Compile Include="TypeMapper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

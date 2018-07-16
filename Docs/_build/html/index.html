@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RepoDb Documentation &mdash; RepoDb 1.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction to RepoDb" href="pages/introduction.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> RepoDb
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="pages/introduction.html">Introduction to RepoDb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/installation.html">Installation Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/dataentity.html">Creating a DataEntity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/mapattribute.html">Mapping with MapAttribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/attributes.html">Property Attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/multiplemapping.html">Multiple Entity Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/typemapping.html">Type Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connection.html">Connection Object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connectionoperations.html">Connection Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/transaction.html">Transaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/expressiontree.html">Expression Tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/querygroup.html">Query Group Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/repository.html">Working with Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connectionpersistency.html">Connection Persistency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/repositoryoperations.html">Repository Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/cache.html">Working with Cache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/trace.html">Working with Trace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/statementbuilder.html">Working with StatementBuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/performance.html">Performance Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/extensibility.html">Library Extensibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/support.html">Supported Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/contact.html">Contacts</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">RepoDb</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>RepoDb Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="repodb-documentation">
+<h1>RepoDb Documentation<a class="headerlink" href="#repodb-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pages/introduction.html">Introduction to RepoDb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/introduction.html#goal">Goal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/introduction.html#vision">Vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/introduction.html#principles">Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/introduction.html#what-s-with-repodb">What’s with RepoDb?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/installation.html">Installation Steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#via-nuget-package-manager">Via Nuget Package Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#via-package-manager-console">Via Package Manager Console</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/dataentity.html">Creating a DataEntity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/dataentity.html#dataentity-class">DataEntity Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/mapattribute.html">Mapping with MapAttribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/mapattribute.html#mapping-a-class">Mapping a Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/mapattribute.html#mapping-a-property">Mapping a Property</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/attributes.html">Property Attributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/attributes.html#ignoring-a-property">Ignoring a Property</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/multiplemapping.html">Multiple Entity Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/typemapping.html">Type Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connection.html">Connection Object</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/connection.html#createcommand-method">CreateCommand Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connection.html#ensureopen-method">EnsureOpen Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connection.html#working-with-storedprocedure">Working with StoredProcedure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connectionoperations.html">Connection Operations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#batchquery-operation">BatchQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#bulkinsert-operation">BulkInsert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#count-operation">Count Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#delete-operation">Delete Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#deleteall-operation">DeleteAll Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#executenonquery-operation">ExecuteNonQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#executequery-operation">ExecuteQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#executereader-operation">ExecuteReader Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#executescalar-operation">ExecuteScalar Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#inlineinsert-operation">InlineInsert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#inlinemerge-operation">InlineMerge Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#inlineupdate-operation">InlineUpdate Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#insert-operation">Insert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#merge-operation">Merge Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#query-operation">Query Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pages/connectionoperations.html#ordering-the-result">Ordering the Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pages/connectionoperations.html#limiting-the-query-result">Limiting the Query Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#truncate-operation">Truncate Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionoperations.html#update-operation">Update Operation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/transaction.html">Transaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/expressiontree.html">Expression Tree</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/expressiontree.html#explicit-expression">Explicit Expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/expressiontree.html#dynamic-expression">Dynamic Expression</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/querygroup.html">Query Group Expressions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#query-operations">Query Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-equal">Operation.Equal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-notequal">Operation.NotEqual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-lessthan">Operation.LessThan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-greaterthan">Operation.GreaterThan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-lessthanorequal">Operation.LessThanOrEqual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-greaterthanorequal">Operation.GreaterThanOrEqual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-like">Operation.Like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-notlike">Operation.NotLike</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-between">Operation.Between</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-notbetween">Operation.NotBetween</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-in">Operation.In</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-notin">Operation.NotIn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-all">Operation.All</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/querygroup.html#operation-any">Operation.Any</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/repository.html">Working with Repository</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/repository.html#dbrepository-class">DbRepository Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repository.html#baserepository-class">BaseRepository Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/connectionpersistency.html">Connection Persistency</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionpersistency.html#percall-persistency">PerCall Persistency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/connectionpersistency.html#instance-persistency">Instance Persistency</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/repositoryoperations.html">Repository Operations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#batchquery-operation">BatchQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#bulkinsert-operation">BulkInsert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#count-operation">Count Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#delete-operation">Delete Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#deleteall-operation">DeleteAll Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#executenonquery-operation">ExecuteNonQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#executequery-operation">ExecuteQuery Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#executescalar-operation">ExecuteScalar Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#inlineinsert-operation">InlineInsert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#inlinemerge-operation">InlineMerge Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#inlineupdate-operation">InlineUpdate Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#insert-operation">Insert Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#merge-operation">Merge Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#query-operation">Query Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pages/repositoryoperations.html#ordering-the-result">Ordering the Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pages/repositoryoperations.html#limiting-the-query-result">Limiting the Query Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#truncate-operation">Truncate Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/repositoryoperations.html#update-operation">Update Operation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/cache.html">Working with Cache</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#creating-a-cache-entry">Creating a Cache Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#checking-a-cache-entry">Checking a Cache Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#checking-a-cache-expiration">Checking a Cache Expiration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#setting-the-cache-expiration">Setting the Cache Expiration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#iterating-the-cache-entries">Iterating the Cache Entries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#removing-or-clearing-a-cache">Removing or Clearing a Cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/cache.html#injecting-a-custom-cache-object">Injecting a Custom Cache Object</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/trace.html">Working with Trace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/trace.html#itrace-interface">ITrace Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/trace.html#tracelog-entry">TraceLog Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/trace.html#cancellabletracelog-entry">CancellableTraceLog Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/trace.html#creating-a-custom-trace-object">Creating a Custom Trace Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/trace.html#cancelling-an-operation">Cancelling an Operation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/statementbuilder.html">Working with StatementBuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#querybuilder-object">QueryBuilder Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createbatchquery-method">CreateBatchQuery Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createcount-method">CreateCount Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createdelete-method">CreateDelete Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createdeleteall-method">CreateDeleteAll Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createinlineinsert-method">CreateInlineInsert Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createinlinemerge-method">CreateInlineMerge Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createinlineupdate-method">CreateInlineUpdate Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createinsert-method">CreateInsert Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createmerge-method">CreateMerge Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createquery-method">CreateQuery Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createtruncate-method">CreateTruncate Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#createupdate-method">CreateUpdate Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#creating-a-custom-statement-builder">Creating a custom Statement Builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/statementbuilder.html#mapping-a-statement-builder">Mapping a Statement Builder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages/performance.html">Performance Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/extensibility.html">Library Extensibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/support.html">Supported Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/contact.html">Contacts</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pages/introduction.html" class="btn btn-neutral float-right" title="Introduction to RepoDb" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Michael Camara Pendon.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
