@@ -176,7 +176,7 @@ namespace RepoDb.TestProject
 
             // Truncate
             repository.Truncate<Animal>();
-
+           
             // Count
             Console.WriteLine($"Counting Person Records: {repository.Count<Person>()}");
             Console.WriteLine($"Counting Animal Records: {repository.Count<Animal>()}");
